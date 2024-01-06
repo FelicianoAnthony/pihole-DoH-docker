@@ -1,10 +1,16 @@
-# Pi-hole - DNS over HTTPS using Cloudflared
+# Pi-hole - DNS over HTTPS ([Cloudflared](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/configure-tunnels/local-management/as-a-service/))
+this script assumes its being run on a raspberry pi Bullseye OS (64 bit) with a static IP address assigned to it
 
-Based on [this repo](https://github.com/apavamontri/pi-hole-cloudflared-docker) but docker image not using official `cloudflared` image based on [this thread](https://github.com/cloudflare/cloudflared/issues/987) ([1](https://github.com/ZoeyVid/cloudflared))
+1. create `./web-password/password.txt` file & add pihole UI password
+   
+2. run `new-server-setup.sh`
+   * update & upgrade
+   * install docker
+   * add user running script to docker group
+   * reboots machine 
 
-1. set password in `./web-password/password.txt`
-
-2. run `./start-pihole.sh`
+3. run `./start-pihole.sh`
+   * runs `docker-compose.yml` file
    * pihole UI accessible on `http://<raspberry_pi_ipaddr>:8061/admin`
 
 

@@ -4,8 +4,7 @@ version: "3"
 services:
   cloudflared:
     container_name: cloudflared
-    # image: cloudflare/cloudflared 
-    image: jauderho/cloudflared:latest # https://github.com/cloudflare/cloudflared/issues/987
+    image: cloudflare/cloudflared 
     restart: unless-stopped
     command: proxy-dns
 

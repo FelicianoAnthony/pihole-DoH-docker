@@ -27,3 +27,15 @@ this script assumes its being run on a raspberry pi Bullseye OS (64 bit) with a 
 
 * [Show DNS resolvers](https://dnscheck.tools/)
 * [DNS Leak Test](https://www.perfect-privacy.com/en/tests/dns-leaktest)
+
+### Ads
+* [Ad blocking test](https://d3ward.github.io/toolz/adblock.html)
+
+
+## Blacklists
+* https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt
+* https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.adblock
+
+
+
+https://www.grc.com/x/ne.dll?bh0bkyd2
